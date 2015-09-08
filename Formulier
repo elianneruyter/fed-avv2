@@ -23,30 +23,35 @@
                 <fieldset>
                     <legend>Contact gegevens</legend>
                         <label>Naam:<br />
-                        <input type="text" name="naam" placeholder="naam"></label><br />
+                        <input type="text" name="naam" placeholder="naam" required></label><br />
                         <label>Bedrijf:<br />
-                        <input type="text" name="bedrijf" placeholder="bedrijf"></label><br />
+                        <input type="text" name="bedrijf" placeholder="bedrijf" required></label><br />
                         <label>Straat:<br />
-                        <input type="text" name="adres" placeholder="straatnaam"></label><br />
+                        <input type="text" name="adres" placeholder="straatnaam" required></label><br />
                         <label>Huisnummer:<br />
-                        <input type="number" name="adres" placeholder="huisnummer"></label><br />
+                        <input type="number" name="adres" placeholder="huisnummer" required></label><br />
                         <label>Postcode:<br />
                         <input type="text" name="postcode" placeholder="postcode" required pattern="[1-9][0-9]{3}\s?[A-Za-z]{2}"></label><br />
                         <label>Plaats:<br />
-                        <input type="text" name="plaats" placeholder="plaats"></label><br />
+                        <input type="text" name="plaats" placeholder="plaats" required></label><br />
                         <label>Telefoon:<br />
-                        <input type="tel" name="telefoon" placeholder="telefoon"></label><br />
+                        <input type="tel" name="telefoon" placeholder="telefoon" required></label><br />
                         <label>Email:<br />
-                        <input type="email" name="email" placeholder="email@voorbeeld.nl"></label><br />
+                        <input type="email" name="email" placeholder="email@voorbeeld.nl" required></label><br />
                 </fieldset>
                 <fieldset>
                     <legend>Kies uw rol</legend>
-                        <label>Ik wil mij aanmelden
+                        <p>Ik wil mij aanmelden
                         <br />
-                           <input type="radio" name="rol" value="voor een project"> voor een project
-                           <input type="radio" name="rol" value="als stage begeleider"> als stagebegeleider
+                        <label>
+                            <input type="radio" name="rol" value="voor een project">
+                            voor een project
                         </label>
-                        <br />
+                        <label>
+                            <input type="radio" name="rol" value="als stagebegeleider">
+                            als stagebegeleider
+                        </label>
+                        </p>
                         <input type="submit" value="Stuur">
                 </fieldset>
            </form>
