@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulier</title>
+        <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <section>
+            <h1>Aanmelden</h1>
+            <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+            Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+            lopen de studenten stage, in het tweede en afstudeerjaar. </p>
+            <em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+            Amsterdam.</em>
+            <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+            Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+            Voor vragen of opmerkingen kunt u <a href="#">contact met ons op nemen</a>.</p>
+        </section>
+
+        <section>
+           <form>
+                <fieldset>
+                    <legend>Contact gegevens</legend>
+                        <label>Naam:<br />
+                        <input type="text" name="naam" placeholder="naam"></label><br />
+                        <label>Bedrijf:<br />
+                        <input type="text" name="bedrijf" placeholder="bedrijf"></label><br />
+                        <label>Straat:<br />
+                        <input type="text" name="adres" placeholder="straatnaam"></label><br />
+                        <label>Huisnummer:<br />
+                        <input type="number" name="adres" placeholder="huisnummer"></label><br />
+                        <label>Postcode:<br />
+                        <input type="text" name="postcode" placeholder="postcode" required pattern="[1-9][0-9]{3}\s?[A-Za-z]{2}"></label><br />
+                        <label>Plaats:<br />
+                        <input type="text" name="plaats" placeholder="plaats"></label><br />
+                        <label>Telefoon:<br />
+                        <input type="tel" name="telefoon" placeholder="telefoon"></label><br />
+                        <label>Email:<br />
+                        <input type="email" name="email" placeholder="email@voorbeeld.nl"></label><br />
+                </fieldset>
+                <fieldset>
+                    <legend>Kies uw rol</legend>
+                        <label>Ik wil mij aanmelden
+                        <br />
+                           <input type="radio" name="rol" value="voor een project"> voor een project
+                           <input type="radio" name="rol" value="als stage begeleider"> als stagebegeleider
+                        </label>
+                        <br />
+                        <input type="submit" value="Stuur">
+                </fieldset>
+           </form>
+        </section>
+
+        <section>
+           <table>
+                      <thead>
+                        <tr>
+                           <th>Project</th>
+                           <th>Stage</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>1. Titel <br />
+                            2. Opdrachtomschrijving<br />
+                            3. Doelgroepomschrijving<br />
+                            4. Doelstelling/ intentie van het project<br />
+                            5. Looptijd<br />
+                            6. Deadline<br />
+                            </td>
+                            <td>Geschikt voor<br />
+                            1. tweedejaars studenten<br />
+                            2. afstudeer studenten<br />
+                            3. onbekend<br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Geschikt voor<br />
+                            1. eerstejaars studenten<br />
+                            2. tweedejaars studenten<br />
+                            3. derderjaars studenten<br />
+                            4. afstudeer studenten<br />
+                            5. onbekend<br />
+                            </td>
+                            <td>
+                            1. Hoe lang is de stage?<br />
+                            - 10 weken<br />
+                            - 20 weken<br />
+                            2. Begin datum<br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Beschrijving werkzaamheden:<br />
+                            1. beschrijving stagewerkzaamheden<br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Beschrijving stagebedrijf<br />
+                            1. Bedrijfsnaam<br />
+                            2. Adres<br />
+                            3. Postcode<br />
+                            4. Plaats<br />
+                            5. Sector<br />
+                            6. Core Business<br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Opmerking</td>
+                            <td>Opmerking</td>
+                        </tr>
+                      </tbody>
+           </table>
+       </section>
+    </body>
+</html>
+
