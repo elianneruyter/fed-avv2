@@ -1,0 +1,7 @@
+th, td {
+    border: 1px solid #000000;
+    text-align: left;
+    vertical-align: top;
+    padding: 5px;
+
+}
