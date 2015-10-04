@@ -1,7 +1,641 @@
-th, td {
-    border: 1px solid #000000;
-    text-align: left;
-    vertical-align: top;
-    padding: 5px;
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background: #DEDEDE;
+    transform: rotate(2deg);
+    box-shadow: 0px 53px 192px -27px rgba(0,0,0,0.75);
+}
+
+.topheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3em;
+    padding: 0.5em;
+}
+
+body > header h1 {
+    padding: 0 1em 0 0.5em;
+    text-decoration: underline;
+    order: 2;
+    font-size: 1.5em;
+    text-shadow: 4px 4px 2px #000000;
+}
+
+.topheader > p {
+    width: 20em;
+    font-size: 0.8em;
+    order: 3;
+}
+
+body > header  img {
+    width: 11em;
+    item: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: ltr;
+    justify-content: center;
+    background: black;
 
 }
+
+nav li {
+    display: inline-flex;
+}
+
+
+nav ul li a {
+    color: #FFD900;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0 5em;
+    text-shadow: 8px 4px 2px #ffffff;
+}
+
+nav ul li a:hover{
+    color:white;
+}
+
+
+header form{
+    position: fixed;
+    background-color: #DEDEDE;
+    top: 0em;
+    right:0;
+    padding: 0.3em;
+}
+
+header form  button {
+    border: 0;
+    padding: 0.4em;
+    background-color: #FFD900;
+    background: linear-gradient(#ffD900, #e6c400);
+    border-radius: 6px;
+}
+
+header form  button:hover{
+    text-shadow: #000000 0 0.1em 0;
+    background: #e6c400;
+    background: linear-gradient(#e6c400, #c7a900);
+}
+
+.to-profile {
+    text-align: right;
+    margin: 0 0 1em; 0;
+    padding: 1em 0 1em 0;
+}
+
+.to-profile a {
+    color: black;
+    text-decoration: none;
+    padding: 0 1em 0 0;
+}
+
+.to-profile a:hover {
+    color: #FFD900;
+    text-decoration: underline;
+
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main, .related {
+    order: 1;
+    width: 60%;
+    padding-right: 10em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .headerformpag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main header h1 {
+    padding-right: 3em;
+    transition: 2s;
+    text-shadow: 0 0.5em 1em #FFD900;
+}
+
+main header h1:hover {
+    font-size: 2em;
+}
+
+main header h2 {
+    text-shadow: 0 0.5em 1em #FFD900;
+}
+
+main header p, main .headerformpag p{
+    width: 40em;
+    margin: 0.3em;
+}
+
+main .headerformpag p {
+    margin: em;
+}
+
+main form {
+    width: 40em;
+}
+
+main form > fieldset:first-child, main form > fieldset:nth-child(2), main form > fieldset:nth-child(3), main form > fieldset:nth-child(4) {
+    border: 0.2em solid #FFD900;
+    margin-bottom: 1.5em;
+    border-radius: 6px;
+    box-shadow: 10px 10px 5px 0px #FFD900;
+}
+
+main form > fieldset > legend:first-child {
+    font-size: 1.3em;
+    border: 0.15em solid #ffd900;
+    padding: 0 0.2em;
+    background-color: #DEDEDE;
+    border-radius: 6px;
+}
+
+/*contactgegevens*/
+main form > fieldset:first-child {
+    display: flex;
+    flex-direction: column;
+    background-color: #DEDEDE;
+}
+
+main form > fieldset:first-child label {
+    width: 35em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     margin-bottom: 0.2em;
+}
+
+main form > fieldset:first-child span {
+    padding-left: 0.5em;
+    width: 7em;
+}
+
+main form > fieldset:first-child input {
+    width: 15em;
+}
+
+main form > fieldset:first-child em {
+    font-size: 0.7em;
+    margin-left: 0.3em;
+
+}
+
+/*ik wil mij aanmelden*/
+main form > fieldset:nth-child(2) {
+    display:flex;
+    flex-direction: colomn;
+    background-color: #DEDEDE;
+}
+
+/*Project*/
+#project {
+    display:flex;
+    flex-direction: colomn;
+    background-color: #DEDEDE;
+}
+
+#project > label{
+    width: 35em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.2em;
+}
+
+#project span {
+    padding-left: 0.5em;
+    width: 12em;
+}
+
+#project >label  input, #project >label  textarea {
+    width: 26em;
+}
+
+#project > label  textarea {
+    height: 4em;
+}
+
+#project fieldset {
+    border: 0;
+    padding: 0 0 1em 0;
+    display: flex;
+
+}
+#project fieldset legend {
+    font-weight: 600;
+    padding-top: 0.5em;
+}
+
+/*stage*/
+#stage {
+    display:flex;
+    flex-direction: colomn;
+    background-color: #DEDEDE;
+}
+
+#stage fieldset {
+    border: 0;
+    padding: 0;
+}
+
+#stage fieldset legend {
+    font-weight: 600;
+    padding-top: 0.5em;
+}
+
+#stage > label{
+    width: 35em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.2em;
+}
+
+#stage span {
+    padding-left: 0.5em;
+    width: 12em;
+}
+
+#stage textarea {
+    width: 26em;
+    height: 4em;
+}
+
+#stage fieldset:nth-child(6) legend {
+    padding: 1em 0 0.2em 2em;
+}
+
+#stage fieldset:nth-child(6) label {
+    display: flex;
+    width: 35em;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.2em;
+    padding-left: 2em;
+}
+
+#stage fieldset:nth-child(6) span {
+    padding-left: 0.5em;
+    width: 10em;
+}
+
+#stage fieldset:nth-child(6) input {
+    width: 26em;
+}
+
+/*button*/
+main form > input {
+    float: center;
+    padding: 0.9em;
+    border: 0;
+    background-color: #FFD900;
+    background: linear-gradient(#ffD900, #e6c400);
+    border-radius: 6px;
+    width: 47.9em;
+}
+
+main form > input:hover{
+    text-shadow: #000000 0 0.1em 0;
+    background: #e6c400;
+    background: linear-gradient(#e6c400, #c7a900);
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section {
+    width: 40em;
+}
+
+main section h3 {
+    font-size: 1.3em;
+    margin: 1em 0 0.3em 0;
+}
+
+main section h4 {
+    font-size: 1em;
+    margin: 0 0 0.3em 0;
+}
+
+main section p{
+    margin: 0.3em;
+}
+
+main section img{
+    width: 40em;
+    transition: 3s;
+}
+
+main section img:hover{
+    width: 50em;
+}
+
+.related {
+    width: 60%;
+    padding: 1em;
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.related h2 {
+    width: 100%;
+    text-align: center;
+        background: #DEDEDE;
+}
+
+.relatedarticles{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding:  0 1em 0 1em;
+    justify-content: center;
+}
+
+.related article{
+    width: 30%;
+    border: 0.1em solid #BFBDBD;
+    margin: 0.1em;
+    padding: 0.3em;
+    max-height: 20em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: #DEDEDE;
+}
+
+.related article h3, .related article p, .related article h4,  {
+    width: 100%;
+}
+
+.related article h3{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1em;
+    margin-bottom: 0.2em;
+}
+.tagline {
+    visibility: hidden;
+    font-size: 0.1em;
+}
+
+.related article header p {
+    text-align: right;
+    font-size: 0.7em;
+    margin: 0;
+}
+.related article h4{
+    margin-bottom: 0;
+}
+
+.related article dl{
+    font-size: 0.8em;
+}
+
+.related article dt{
+    font-weight: 700;
+    margin-top: 0.3em;
+}
+
+.related article ul{
+    margin-top: 0.3em;
+}
+
+.related article footer {
+    text-align: right;
+    font-size: 0.7em;
+    margin: 0;
+}
+.related article footer h4{
+    margin-bottom: 0;
+}
+
+.related article footer p{
+    margin-top: 0;
+}
+
+.related article > p {
+    font-size: 0.9em;
+}
+.related article blockquote {
+    font-size: 0.9em;
+    width: 12em;
+}
+.related article section {
+    font-size: 0.9em;
+}
+
+aside {
+    background-color: #DEDEDE;
+    order: 2;
+    flex: 1;
+    height: auto;
+    margin-right: 1em;
+        transform: rotate(2deg);
+}
+
+aside h2{
+    text-align: center;
+    margin-top: 0.3em;
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid #BFBDBD;
+    background-color: #000000;
+}
+
+aside h2 a{
+    text-decoration: none;
+    color: #FFD900;
+}
+
+aside section article  {
+    padding: 0 0.5em;
+    border-bottom: 0.2em solid black;
+}
+
+aside section h3{
+    font-size: 1em;
+    margin-bottom: 0em;
+}
+
+aside section p {
+    margin-top: 0.2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+aside section p a, aside section p time {
+    width: 100%;
+    text-align: right;
+    color: #919191;
+    font-size: 0.7em;
+}
+aside section p a {
+    margin-bottom: 0.4em;
+}
+aside section p:not(a), aside section p:not(time) {
+    font-size: 0.9em;
+}
+
+aside section footer{
+    font-size: 0.7em;
+    color: #919191;
+}
+aside section footer time {
+    font-size: 1.1em;
+}
+aside section footer {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+aside section footer p:first-child {
+    padding: 0 0.5em 0 0;
+}
+
+aside section footer p:nth-child(3) {
+    padding: 0 0em 0 0.5em;
+}
+
+aside section footer time:nth-child(4) {
+    padding: 0 0.5em 0 0.5EM;
+}
+
+.footerrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: #DEDEDE;
+    transform: rotate(2deg);
+}
+
+.footerrow h2 {
+    text-align: center;
+    background-color: #000000;
+    color: #FFD900;
+    line-height: 1.5em;
+    padding: 0 5em;
+
+}
+
+#sitemap, #contact, #search, #about {
+    width: 25%;
+}
+
+#sitemap ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+#sitemap > ul > li > a {
+    font-weight: 600;
+}
+
+#sitemap ul li a:hover {
+    color: #c7a900;
+    text-decoration: underline;
+    font-size: 1.1em;
+    font-weight: 600
+}
+
+#contact p {
+    margin: 0.1em;
+}
+
+#contact p:nth-child(2){
+    font-weight: 600;
+    text-align: center;
+}
+
+#search form{
+    display: flex;
+    justify-content: center;
+}
+
+#about p {
+    padding: 0 1em;
+
+}
+
+#credits, #feedback {
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+#credits h2 {
+    font-size: 1em;
+    margin: 0;
+    padding-top: 1em;
+}
+
+#credits p {
+    font-size: 0.7em;
+    margin: 0;
+}
+
+#feedback a{
+    color: #ffffff;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+@media only screen and (max-width: 60em) {
+    body {
+        background: papayawhip;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    body {
+        background: blue;
+    }
+}
+
+@media only screen and (max-width: 60em) {
+    body {
+        font-size: 0.3em;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    body {
+        font-size: 3em;
+    }
+}
+
